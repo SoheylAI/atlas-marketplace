@@ -1,31 +1,56 @@
 export default function SearchBar() {
   return (
-    <section className="max-w-6xl mx-auto -mt-12 px-6 relative z-10">
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-wrap gap-4">
-        <select className="border rounded-lg px-4 py-3 flex-1">
-          <option>Property Type</option>
-          <option>House</option>
-          <option>Apartment</option>
-          <option>Villa</option>
-        </select>
+    <section className="mx-auto -mt-16 max-w-7xl px-6 relative z-20">
+      <div className="rounded-3xl bg-white p-6 shadow-2xl">
 
-        <select className="border rounded-lg px-4 py-3 flex-1">
-          <option>Location</option>
-          <option>Nicosia</option>
-          <option>Kyrenia</option>
-          <option>Famagusta</option>
-        </select>
+        <div className="mb-6 flex gap-3">
+          <button className="rounded-full bg-teal-600 px-5 py-2 text-white font-semibold">
+            Buy
+          </button>
 
-        <select className="border rounded-lg px-4 py-3 flex-1">
-          <option>Price Range</option>
-          <option>£50k - £100k</option>
-          <option>£100k - £250k</option>
-          <option>£250k+</option>
-        </select>
+          <button className="rounded-full border px-5 py-2 font-semibold">
+            Rent
+          </button>
 
-        <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold transition">
-          Search
-        </button>
+          <button className="rounded-full border px-5 py-2 font-semibold">
+            Cars
+          </button>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-5">
+
+          <input
+            type="text"
+            placeholder="City"
+            className="rounded-xl border p-4"
+          />
+
+          <select className="rounded-xl border p-4">
+            <option>Property Type</option>
+            <option>Apartment</option>
+            <option>House</option>
+            <option>Villa</option>
+          </select>
+
+          <select className="rounded-xl border p-4">
+            <option>Price</option>
+            <option>£50k - £100k</option>
+            <option>£100k - £250k</option>
+            <option>£250k+</option>
+          </select>
+
+          <input
+            type="text"
+            placeholder="Keywords"
+            className="rounded-xl border p-4"
+          />
+
+          <button className="rounded-xl bg-teal-600 text-white font-bold hover:bg-teal-700 transition">
+            Search
+          </button>
+
+        </div>
+
       </div>
     </section>
   );
