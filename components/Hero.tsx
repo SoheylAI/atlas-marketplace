@@ -2,18 +2,26 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-32 px-6">
-      <h1 className="text-6xl font-bold max-w-4xl">
-        Find Your Perfect Home or Car in Northern Cyprus
-      </h1>
+    <section className="bg-gradient-to-b from-white to-gray-100">
+      <div className="mx-auto flex min-h-[80vh] max-w-7xl flex-col items-center justify-center px-6 text-center">
+        <span className="rounded-full bg-teal-100 px-4 py-2 text-sm font-semibold text-teal-700">
+          Northern Cyprus' Modern Marketplace
+        </span>
 
-      <p className="mt-6 max-w-2xl text-lg text-gray-600">
-        Discover verified properties and vehicles with a modern, secure, and
-        easy-to-use marketplace.
-      </p>
+        <h1 className="mt-8 max-w-5xl text-5xl font-extrabold leading-tight md:text-7xl">
+          Find Your Perfect
+          <br />
+          Home or Car
+        </h1>
 
-      <div className="mt-10">
-        <Button text="Start Searching" />
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-600">
+          Discover verified properties and vehicles with a fast, secure, and
+          modern marketplace built for Northern Cyprus.
+        </p>
+
+        <div className="mt-10">
+          <Button text="Start Searching" />
+        </div>
       </div>
     </section>
   );
