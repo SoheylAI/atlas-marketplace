@@ -16,9 +16,9 @@ export default function Navbar() {
           <Link href="/contact">Contact</Link>
         </nav>
 
-        <button className="rounded-xl bg-teal-600 px-5 py-2 text-white font-semibold hover:bg-teal-700 transition">
-          Sign In
-        </button>
+        <button className="flex items-center gap-2 rounded-xl bg-teal-600 px-5 py-2 text-white font-semibold transition hover:bg-teal-700">
+  Sign In
+</button>
       </div>
     </header>
   );

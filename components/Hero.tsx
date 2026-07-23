@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -20,7 +20,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-10">
-          <Button text="Start Searching" variant="primary" />
+          <Button size="lg">
+  Start Searching
+</Button>
         </div>
       </div>
     </section>
