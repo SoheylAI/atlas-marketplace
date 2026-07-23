@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-10">
-          <Button text="Start Searching" />
+          <Button text="Start Searching" variant="primary" />
         </div>
       </div>
     </section>
